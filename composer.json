@@ -1,0 +1,17 @@
+{
+    "name": "charithr/test",
+    "autoload": {
+        "psr-4": {
+            "Charithr\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rajithacharith",
+            "email": "rajithacharith@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.12.1"
+    }
+}
