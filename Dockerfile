@@ -1,4 +1,4 @@
-FROM composer:1.9.3 as vendor
+FROM composer:latest as vendor
 
 
 WORKDIR /tmp/
@@ -15,7 +15,7 @@ RUN composer install \
     --prefer-dist
 
 
-FROM php:7.2-apache-stretch
+FROM php:7.3.29-apache-stretch
 
 COPY . /var/www/html
 COPY --from=vendor /tmp/vendor/ /var/www/html/vendor/
