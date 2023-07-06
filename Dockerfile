@@ -15,7 +15,7 @@ RUN composer install \
     --prefer-dist
 
 
-FROM php:7.3.29-apache-stretch
+FROM php:apache-bullseye
 
 COPY . /var/www/html
 COPY --from=vendor /tmp/vendor/ /var/www/html/vendor/
