@@ -19,3 +19,6 @@ FROM php:7.2-apache-stretch
 
 COPY . /var/www/html
 COPY --from=vendor /tmp/vendor/ /var/www/html/vendor/
+
+# Set a non-root user
+USER 10001
