@@ -26,6 +26,8 @@ if (isset($_GET['code'])) {
     }
     echo $_SESSION['email'];
 } else {
-    echo $_SESSION['email'];
+    $username = $_SESSION['email'];
+    echo "Hi, $username.";
+    echo "<br><a href='logout.php'>Logout</a>";
 }
 ?>
