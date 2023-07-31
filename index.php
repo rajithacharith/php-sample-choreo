@@ -2,10 +2,9 @@
 
 require_once 'config.php';
 
-if (isset($_SESSION['token'])) {
-    header("Location: welcome.php");
-  } else {
-    echo "<a href='" . $client->createAuthUrl() . "'>Google Login</a>";
-  }
+// check header X-Forwarded-Access-Token.
+if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) { 
+  echo "X-Forwarded-Access-Token: " . $_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'];
+}
 
 ?>
