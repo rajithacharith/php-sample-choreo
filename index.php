@@ -10,5 +10,5 @@ if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) {
 }
 
 ?>
-
-<a href="welcome.php">Welcome</a>
+<br>
+<a href="welcome.php">To Welcome page.....</a>
