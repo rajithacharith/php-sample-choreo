@@ -16,6 +16,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) {
     if ($url == null) {
       $url = "https://a0a51ad4-1acd-4ff5-9185-db759f540c40-dev.e1-us-east-azure.choreoapis.dev/yluh/expressbackend/product-catalog-803/1.0.0/products";
     }
+    echo "Calling another API: " . $url;
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
       'Authorization: Bearer ' . $token
