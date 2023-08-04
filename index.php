@@ -11,16 +11,14 @@ if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) {
 
 $headers = getallheaders();
 
-if (in_array('Authorization', $headers)) {
-    echo $headers['Authorization'];
-}
-
 echo "<br>";
 echo "=================================================================== <br>";
 foreach ($headers as $key => $value)
    {
-      echo "$key: $value";
-      echo "<BR>";
+      if($key == "Authorization") {
+        echo "$key: $value";
+        echo "<BR>";
+      }
    }
 
 ?>
