@@ -15,6 +15,10 @@ if (in_array('Authorization', $headers)) {
     echo $headers['Authorization'];
 }
 
+echo "<br>";
+echo "=================================================================== <br>";
+echo $headers;
+
 ?>
 <br>
 <a href="welcome.php">To Welcome page.....</a>
