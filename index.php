@@ -16,7 +16,7 @@ echo "=================================================================== <br>";
 foreach ($headers as $key => $value)
    {
       if($key == "Authorization") {
-        echo "$key: $value";
+        echo "Id Token: " . explode(" ",$value)[1];
         echo "<BR>";
       }
    }
