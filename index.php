@@ -17,7 +17,11 @@ if (in_array('Authorization', $headers)) {
 
 echo "<br>";
 echo "=================================================================== <br>";
-echo $headers;
+foreach ($headers as $key => $value)
+   {
+      echo "$key: $value";
+      echo "<BR>";
+   }
 
 ?>
 <br>
