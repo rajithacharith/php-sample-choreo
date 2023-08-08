@@ -22,6 +22,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) {
     ));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
-    echo "Response from another API: " . $response;
+    echo "Choreo deployed API URL: " . $url;
+    echo "Response from the Choreo Deployed API: " . $response;
   }
 ?>
