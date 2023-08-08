@@ -1,7 +1,4 @@
 <?php
-
-require_once 'config.php';
-
 // check header X-Forwarded-Access-Token.
 if (isset($_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'])) { 
   $token=$_SERVER['HTTP_X_FORWARDED_ACCESS_TOKEN'];
